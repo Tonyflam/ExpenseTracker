@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "expense_tracker_backend": {
+      "main": "src/expense_tracker_backend/main.mo",
+      "type": "motoko"
+    },
+    "expense_tracker_frontend": {
+      "dependencies": [
+        "expense_tracker_backend"
+      ],
+      "source": [
+        "src/expense_tracker_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
